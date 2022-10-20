@@ -1,0 +1,31 @@
+Source: xfce4-appfinder
+Section: xfce
+Priority: optional
+Maintainer: Debian Xfce Maintainers <debian-xfce@lists.debian.org>
+Uploaders: Yves-Alexis Perez <corsac@debian.org>
+Build-Depends: debhelper-compat (= 12),
+               intltool,
+               libgarcon-1-0-dev (>= 0.3.0),
+               libglib2.0-dev,
+               libgtk-3-dev (>= 3.20),
+               libxfce4ui-2-dev (>= 4.10.0),
+               libxfce4util-dev (>= 4.15.2),
+               libxfconf-0-dev (>= 4.10.0),
+               xfce4-dev-tools (>= 4.16)
+Rules-Requires-Root: no
+Standards-Version: 4.5.1
+Homepage: https://docs.xfce.org/xfce/xfce4-appfinder/start
+Vcs-Git: https://salsa.debian.org/xfce-team/desktop/xfce4-appfinder.git
+Vcs-Browser: https://salsa.debian.org/xfce-team/desktop/xfce4-appfinder
+
+Package: xfce4-appfinder
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Application finder for the Xfce4 desktop environment
+ This is an application finder for the Xfce4 desktop environment.
+ It will search for installed applications on your system. It can also be used
+ to browse installed applications by category, run them or edit their launchers.
+ .
+ xfce4-appfinder can also be used with a shortcut command to quickly run
+ applications, and also supports custom prefixes to execute custom commands on
+ provided paramers.
